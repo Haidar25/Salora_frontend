@@ -51,8 +51,10 @@
 		<!-- Container-fluid starts -->
 		<div class="container-fluid">
 			<div class="row">
-					<div class="col-sm-12">
-						<div class="login-card card-block bg-white">
+					<div class="col-sm-12"><center>
+                    <a href="/" style=" background-color: #f44336; color: white; padding: 14px 25px; text-align: center; text-decoration: none; display: inline-block; " class="f-w-600 p-l-5"> Kembali ke Home</a>
+                    </center>
+						<div class="login-card card-block bg-white" style="border-radius: 90px 40px;">
                             <form class="md-float-material" action="/register" method="POST">
                                 @csrf
 								<div class="text-center">
@@ -98,15 +100,30 @@
 										<input type="password" id="password-confirm" class="md-form-control" class="form-control" name="password_confirmation" required autocomplete="new-password" name="password_confirmation">
 									</div>
 								<div class="col-xs-10 offset-xs-1">
-								<input type="submit" value="Buat Sekarang" class="btn btn-primary btn-md btn-block waves-effect waves-light m-b-20">
+								<input type="submit" value="Buat Sekarang" style="border-radius: 90px 20px;" class="btn btn-primary btn-md btn-block waves-effect waves-light m-b-20">
 								</div>
 									<div class="row">
 										<div class="col-xs-12 text-center">
 											<span class="text-muted">Sudah Mendaftar ?</span>
-											<a href="/login" class="f-w-600 p-l-5"> Login disini</a>
-
-										</div>
-									</div>
+											<a href="/login" class="f-w-600 p-l-5"> Login disini</a><br><br>
+                                            </div>
+                                            </div>
+                                            <div class="form-group row mb-0">
+                               <center>
+                                <a href="{{ url('/login/twitter') }}" >
+                                <i class="fa fa-twitter"></i>
+                                Masuk dengan Twitter ||
+                                </a>
+                                <a href="{{ url('/login/github') }}">
+                                <i class="fa fa-github"></i>
+                                  Github ||
+                                </a>
+                                <a href="{{ url('/login/google') }}">
+                                <i class="fa fa-google"></i>
+                                  Google
+                                   
+                    </a>
+                </div>
 							</form>
 							<!-- end of form -->
 						</div>

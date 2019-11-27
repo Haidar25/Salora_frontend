@@ -59,8 +59,10 @@
 	<div class="container-fluid">
 		<div class="row">
 
-			<div class="col-sm-12">
-				<div class="login-card card-block">
+			<div class="col-sm-12"><center>
+            <a href="/" style=" background-color: #f44336; color: white; padding: 14px 25px; text-align: center; text-decoration: none; display: inline-block;" class="f-w-600 p-l-5"> Kembali ke Home</a>
+            </center>
+				<div class="login-card card-block" style="border-radius: 90px 30px;">
                         <form class="md-float-material" action="/login" method="POST">
                             @csrf
                             <div class="text-center">
@@ -88,12 +90,13 @@
                                 </div>
 
                             <div class="col-xs-10 offset-xs-1">
-                            <input type="submit" value="Login Sekarang" class="btn btn-primary btn-md btn-block waves-effect waves-light m-b-20">
+                            <input type="submit" value="Login Sekarang" style="border-radius: 90px 20px;" class="btn btn-primary btn-md btn-block waves-effect waves-light m-b-20">
                             </div>
                                 <div class="row">
                                     <div class="col-xs-12 text-center">
                                         <span class="text-muted">Anda belum daftar?</span>
                                         <a href="/register" class="f-w-600 p-l-5"> Daftar Sekarang !</a>
+
                                         <div class="form-group row mb-0">
                                <br><br>
                                 <a href="{{ url('/login/twitter') }}" >
